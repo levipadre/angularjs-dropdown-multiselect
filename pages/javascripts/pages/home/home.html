@@ -623,6 +623,41 @@ $scope.customFilter = 'a';
                 </div>
             </div>
         </accordion-group>
+        <accordion-group heading="Disable Dropdown">
+            <div class="row">
+                <div class="col-xs-12">
+                    You can enable or disable dropdown conditionally.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h3>Demo</h3>
+                    <div class="well">
+                        <div>
+                           <div ng-dropdown-multiselect options="example16data" selected-model="example16model" disable-dropdown="disableDropdown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h3>The model:</h3>
+                    <pre>{{example16model|json}}</pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Code</h3>
+                    <div class="well">
+                        <div>
+                            <div hljs>
+                                // HTML
+                                <div ng-dropdown-multiselect options="example16data" selected-model="example16model" disable-dropdown="disableDropdown"></div>
+
+                                // JavaScript $scope.example16model = []; $scope.example16data = [ {id: 1, label: "David"}, {id: 2, label: "Jhon"}, {id: 3, label: "Danny"}]; $scope.disableDropdown = true;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </accordion-group>
     </accordion>
     <h1>Full API Documentation</h1>
     <h2>Attributes</h2>
@@ -683,6 +718,12 @@ $scope.customFilter = 'a';
                 </td>
                 <td>String</td>
                 <td>Uses for settings the search filter from outside the direcrtive.</td>
+            </tr>
+            <tr>
+                <td><strong>disable-dropdown</strong>
+                </td>
+                <td>Boolean</td>
+                <td>Indicated whether to disable dropdown.</td>
             </tr>
         </tbody>
     </table>

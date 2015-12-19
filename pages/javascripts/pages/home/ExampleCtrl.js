@@ -155,4 +155,10 @@ angular.module('exampleApp').controller('ExampleCtrl', ['$scope', function($scop
     };
 
     $scope.customFilter = 'a';
+    $scope.example16model = [];
+    $scope.example16data = [
+        {id: 1, label: "David"},
+        {id: 2, label: "Jhon"},
+        {id: 3, label: "Danny"}];
+    $scope.disableDropdown = true;
 }]);

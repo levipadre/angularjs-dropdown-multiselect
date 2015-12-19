@@ -16,7 +16,7 @@ NOTE: I am currently working on a v2 of this directive with performance imporovm
 - Callback events.
 - Translation texts.
 - Scrollable list (useful for big lists)
-
+- Disable dropdown.
 ## Demo
 http://dotansimha.github.io/angularjs-dropdown-multiselect/
 
